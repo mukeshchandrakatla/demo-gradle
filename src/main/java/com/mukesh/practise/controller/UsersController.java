@@ -10,10 +10,10 @@ import java.util.List;
 
 @RestController
 public class UsersController {
-    @GetMapping(value="/users")
-    @ResponseBody
     @Autowired
     private UsersService usersService;
+    @GetMapping(value="/users")
+    //@ResponseBody
     public List<UsersModel> getUsersList(){
      return usersService.getUsers();
     }
