@@ -17,4 +17,9 @@ public class UsersController {
     public List<UsersModel> getUsersList(){
      return usersService.getUsers();
     }
+
+    @PostMapping(value = "/userDetails")
+    public List<UsersModel> postUserDetails(){
+        return usersService.postUserDetails();
+    }
 }

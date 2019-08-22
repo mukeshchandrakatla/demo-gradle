@@ -13,4 +13,8 @@ public class UsersService {
     public List<UsersModel> getUsers(){
         return Users;
     }
+    public List<UsersModel> postUserDetails(){
+        return Details;
+    }
+    private List<UsersModel> Details = new ArrayList<UsersModel>();
 }
