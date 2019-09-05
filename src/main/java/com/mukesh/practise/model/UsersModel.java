@@ -1,9 +1,22 @@
 package com.mukesh.practise.model;
 
+import org.apache.catalina.User;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "usersmodel")
 public class UsersModel {
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
     private Integer id;
+    @Column(name = "firstname")
     private String firstName;
+    @Column(name = "lastname")
     private String lastName;
+    public UsersModel(){
+    }
 
     public UsersModel(Integer id, String firstName, String lastName) {
         this.id=id;
